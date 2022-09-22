@@ -59,19 +59,8 @@ nav a{
 
 /* Modules */
 
-.mod__container {
-    display: grid; 
-    grid-template-columns: 50% 50%; 
-    grid-template-rows: 100vh 100vh 100vh 100vh; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "l1 r1"
-        "l2 r2"
-        "l3 r3"
-        "l4 r4"
-    ; 
-}
-.mod__container .pic{
+
+/* .mod__container .pic{
     background-size: cover;
 }
 .l1 {
@@ -177,7 +166,7 @@ nav a{
 .r4 {
     grid-area: r4; 
     background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/butterfly_53S7Cwkb0E.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465762789');
-}
+} */
 
 
 /* Video module */
@@ -354,3 +343,177 @@ footer h4{
     grid-area: copy; 
     margin-top: 3rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mod__container {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 100vh 100vh 100vh 100vh; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "l1 r1"
+        "l2 r2"
+        "l3 r3"
+        "l4 r4"
+    ; 
+}
+
+
+.l1{
+    grid-area: l1;
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/Rectangle_124_tcxBepkeB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663860575517');
+    background-size: 100% 80%;
+    background-position: 50% 80%;
+
+}
+.r1{
+    grid-area: r1;
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/flap_tote_FNJd5YlDU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465758357');
+
+}
+.padding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padding .test {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 999;
+}
+.padding .test *{
+    margin: 1rem 0;
+}
+
+.l2 {
+    grid-area: l2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/Component_1_frE1ecZgc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663860573583');
+    background-size: 80% 60%;
+    background-position: 50% 60%;
+    background-color: #EEEEEE;
+}
+.ini{
+    display: flex;
+    justify-content: center;
+}
+.ini .inside{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    padding: 6rem 0;
+
+}
+
+.r2 {
+    grid-area: r2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/blue_sweater_7Dun4iBTXo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465758382');
+    background-position: 50% 0%;
+    background-size: 110% 90%;
+}
+.l3 {
+    grid-area: l3; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/yellow_floor_lZ1O3RgorI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465758331');
+    background-size: 100% 80%;
+    background-position: 50% 80%;
+}
+.r3 {
+    grid-area: r3; 
+    padding: 7rem;
+}
+.r3 .r3__container img{
+    width: 100%;
+}
+.r3 .r3__container{
+    display: grid; 
+    height: 100%;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 1fr 1fr; 
+    column-gap: 2rem;
+    grid-template-areas: 
+        "img1 img2"
+        "txt ..."
+    ; 
+}
+.r3 .r3__container .r3__txt{
+    grid-area: txt;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    color: #00000050;
+}
+.r3 .r3__container .r3__txt a{
+    color: #000000;
+}
+
+
+.l4 {
+    grid-area: l4; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/small_tote_sCPieDEe-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465751231');
+    background-size: 35% 30%;
+    background-position: 50% 50%;
+    width: 100%;
+      height: 100%;
+}
+.r4 {
+    grid-area: r4; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Qwstion_FinalPage/butterfly_53S7Cwkb0E.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662465762789');
+} 
+
+
+
+
+
+
+
+
+
+.section-parallax {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .parallax-content {
+      position: relative;
+      background-repeat: no-repeat;
+    width: 100%;
+      height: 150%;
+  }
+  
+  .padding{
+      background-color: #FFDB5A;
+      padding: 7rem;
+  }
